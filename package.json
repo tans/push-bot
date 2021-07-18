@@ -1,0 +1,21 @@
+{
+  "name": "push-bot",
+  "version": "1.0.0",
+  "description": "微信消息推送机器人",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tans",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "fastify": "^3.19.1",
+    "fastify-rate-limit": "^5.5.0",
+    "lodash": "^4.17.21",
+    "nedb-promises": "^5.0.0",
+    "uuid": "^8.3.2",
+    "wechaty": "^0.62.3",
+    "wechaty-plugin-contrib": "^0.14.23"
+  } 
+}
