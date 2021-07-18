@@ -17,5 +17,5 @@
     "uuid": "^8.3.2",
     "wechaty": "^0.62.3",
     "wechaty-plugin-contrib": "^0.14.23"
-  } 
+  }
 }
