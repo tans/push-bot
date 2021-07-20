@@ -24,4 +24,9 @@
 
 <img src="demo/webhook.jpeg" width="360px" />
 
-#调用获得的api地址， 即可向微信个人账号发送消息。
+# 调用获得的api地址， 即可向微信个人账号发送消息。
+
+
+# 机器人免费使用，欢迎加微信交流学习。
+
+<img src="http://wimg.caidan2.com/cuimage/20210720152927_TKeX2J_Screenshot.png" width="280px"/>
