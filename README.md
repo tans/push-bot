@@ -4,10 +4,10 @@
 关注机器人即可获得推送API地址
 
 # 特点
-* 代码精简，百行代码实现
+* 代码少，百行代码实现
 * 基于Wechaty ，fastify
 * 请求限制， 防止机器人账号被封，也避免消息骚扰
-* 自动通过好友，自动发送地址
+* 自动通过好友，自动生成接口地址
 
 
 # 安装运行
@@ -24,4 +24,9 @@
 
 <img src="demo/webhook.jpeg" width="360px" />
 
-请求api地址
+# 调用获得的api地址， 即可向微信个人账号发送消息。
+
+
+# 机器人免费使用，欢迎加微信交流学习。
+
+<img src="http://wimg.caidan2.com/cuimage/20210720152927_TKeX2J_Screenshot.png" width="280px"/>
