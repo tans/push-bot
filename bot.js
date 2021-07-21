@@ -55,7 +55,7 @@
   }).on("message", async function(message) {
     var text;
     text = message.text();
-    if (text === "webhook" || text === '推送地址') {
+    if (text === "webhook" || text === "推送地址") {
       return (await sendWebhook(message.talker()));
     }
   });
@@ -80,7 +80,8 @@
   };
 
   fastify.register(require("fastify-rate-limit"), {
-    max: 100
+    max: 100,
+    global: false
   });
 
   fastify.get("/send/:token", {
@@ -115,7 +116,7 @@
   start = async function() {
     await bot.start();
     await fastify.listen(process.env.PORT || 3000);
-    return console.log('listen ' + process.env.PORT || 3000);
+    return console.log("listen " + process.env.PORT || 3000);
   };
 
   start();

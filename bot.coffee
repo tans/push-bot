@@ -9,7 +9,6 @@ UserDB = Datastore.create "./user.db"
 { Wechaty, ScanStatus } = require "wechaty"
 { EventLogger } = require "wechaty-plugin-contrib"
 
-
 sleep = ->
 	new Promise (resolve) ->
 		setTimeout resolve, _.random(1.2, 3.2) * 1000
@@ -38,7 +37,7 @@ bot
 				await sendWebhook contact
 	.on "message", (message) ->
 		text = message.text()
-		if text is "webhook" or text is '推送地址'
+		if text is "webhook" or text is "推送地址"
 			await sendWebhook message.talker()
 
 sendWebhook = (contact) ->
@@ -56,8 +55,10 @@ sendWebhook = (contact) ->
 
 	return await _send token
 
+fastify.register require("fastify-rate-limit"),
+	max: 100
+	global: false
 
-fastify.register require("fastify-rate-limit"), max: 100
 fastify.get(
 	"/send/:token"
 ,
@@ -82,6 +83,6 @@ fastify.get(
 start = ->
 	await bot.start()
 	await fastify.listen process.env.PORT or 3000
-	console.log 'listen ' + process.env.PORT or 3000
+	console.log "listen " + process.env.PORT or 3000
 
 start()
