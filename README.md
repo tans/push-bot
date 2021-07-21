@@ -20,12 +20,12 @@
 
 # 马上试用
 
-<img src="demo/bot_qr.jpeg" width="360px" />
 
-<img src="demo/webhook.jpeg" width="360px" />
+
+![image](https://user-images.githubusercontent.com/543287/126447077-48823663-cf5d-433b-b51d-8096f634477d.png)
+
 
 # 调用获得的api地址， 即可向微信个人账号发送消息。
-
 
 # 机器人免费使用，欢迎加微信交流学习。
 
