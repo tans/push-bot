@@ -21,9 +21,11 @@
 
 # 发送接口
 
+## 地址 https://push.bot.qw360.cn/send/:token
 该接口通过关注机器人获得
 
 GET 接口方便发送文本消息
+
 POST 接口支持复杂消息结构
 
 ```
@@ -34,14 +36,15 @@ GET https://push.bot.qw360.cn/send/:token?msg=xxx
 POST https://push.bot.qw360.cn/send/:token
 
 {
-	msg:{
-		type: 'image'
-		url: 'http://wimg.caidan2.com/cuimage/20210722084325_zvqW3V_Screenshot.png'
-	}
-
+    "msg": {
+        "type": "image",
+        "url": "https://wimg.caidan2.com/cuimage/20210722085945_fb94ET_WechatIMG8.png"
+    }
 }
 
 ```
+
+图片url仅支持 https
 
 # 马上试用
 
