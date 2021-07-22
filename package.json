@@ -12,6 +12,7 @@
     "dotenv": "^10.0.0",
     "fastify": "^3.19.1",
     "fastify-rate-limit": "^5.5.0",
+    "file-box": "^0.16.8",
     "lodash": "^4.17.21",
     "nedb-promises": "^5.0.0",
     "uuid": "^8.3.2",

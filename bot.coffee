@@ -104,13 +104,13 @@ fastify.post(
 				status: true
 
 		if msg.type is "image"
-			await contact.say FileBox.from msg.url
+			image = FileBox.fromUrl msg.url
+			await contact.say image
 			return
 				status: true
 
 		return
-			return 
-				status: false, msg: "unsupported msg type"
+			status: false, msg: "unsupported msg type"
 )
 
 start = ->
