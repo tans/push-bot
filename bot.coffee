@@ -1,7 +1,8 @@
 require("dotenv").config()
 Datastore = require "nedb-promises"
-_ = require "lodash"
+{ FileBox } = require "file-box"
 { v1: uuid } = require "uuid"
+_ = require "lodash"
 fastify = require("fastify") logger: true
 
 UserDB = Datastore.create "./user.db"
@@ -78,6 +79,38 @@ fastify.get(
 		contact.say msg
 		return
 			status: true
+)
+
+fastify.post(
+	"/send/:token"
+,
+	config:
+		rateLimit:
+			max: 10
+			keyGenerator: (req) ->
+				return req.params.token
+,
+	(request, reply) ->
+		{ msg } = request.body
+		{ token } = request.params
+		user = await UserDB.findOne token: token
+		return status: false, msg: "token not exists" unless user
+
+		contact = bot.Contact.load user.contactid
+
+		if typeof msg is "string"
+			await contact.say msg
+			return
+				status: true
+
+		if msg.type is "image"
+			await contact.say FileBox.from msg.url
+			return
+				status: true
+
+		return
+			return 
+				status: false, msg: "unsupported msg type"
 )
 
 start = ->

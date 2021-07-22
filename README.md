@@ -1,32 +1,48 @@
 # push-bot
-基于wechaty的微信推送机器人
 
-关注机器人即可获得推送API地址
+基于 wechaty 的微信推送机器人
+
+关注机器人即可获得推送 API 地址
 
 # 特点
-* 代码少，百行代码实现
-* 基于Wechaty ，fastify
-* 请求限制， 防止机器人账号被封，也避免消息骚扰
-* 自动通过好友，自动生成接口地址
 
+-   代码少，百行代码实现
+-   基于 Wechaty ，fastify
+-   请求限制， 防止机器人账号被封，也避免消息骚扰
+-   自动通过好友，自动生成接口地址
 
 # 安装运行
 
 1. 安装依赖 `npm install`
 
-2. 配置参数，编辑WECHATY_TOEKN   `cp .env.example .env`
+2. 配置参数，编辑 WECHATY_TOEKN `cp .env.example .env`
 
 3. 运行 `node bot.js`
 
+# 发送接口
+
+该接口通过关注机器人获得
+
+GET 接口方便发送文本消息
+POST 接口支持复杂消息结构
+
+```
+
+GET https://push.bot.qw360.cn/send/:token?msg=xxx
+
+
+POST https://push.bot.qw360.cn/send/:token
+
+{
+	msg:{
+		type: 'image'
+		url: 'http://wimg.caidan2.com/cuimage/20210722084325_zvqW3V_Screenshot.png'
+	}
+
+}
+
+```
+
 # 马上试用
 
-
-
 ![image](https://user-images.githubusercontent.com/543287/126447077-48823663-cf5d-433b-b51d-8096f634477d.png)
-
-
-# 调用获得的api地址， 即可向微信个人账号发送消息。
-
-# 机器人免费使用，欢迎加微信交流学习。
-
-<img src="http://wimg.caidan2.com/cuimage/20210720152927_TKeX2J_Screenshot.png" width="280px"/>
