@@ -42,6 +42,7 @@ bot
       if invitee.self()
         # unless room.payload.ownerId is inviter.id
         #   return inviter.say "仅限群主邀请才可获得推送地址"
+
         await room.say "大家好,我是推送精灵, 通过接口可以控制我发送消息到群上."
         await sendRoomWebHook inviter, room
   .on "room-invite", (roomInvitation) ->
