@@ -60,3 +60,9 @@ GET https://push.bot.qw360.cn/room/:token?msg=xxx
 # 马上试用
 
 ![image](https://user-images.githubusercontent.com/543287/126447077-48823663-cf5d-433b-b51d-8096f634477d.png)
+
+
+# 定制专属机器人，请加微信
+
+WechatIMG1.jpeg![WechatIMG1](https://user-images.githubusercontent.com/543287/128118656-b35e7f0e-6b49-4eb2-b579-8dd3ead085ac.jpeg)
+
