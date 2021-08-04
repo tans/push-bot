@@ -53,7 +53,7 @@ POST https://push.bot.qw360.cn/send/:token
 
 ```
 
-GET https://push.bot.qw360.cn/send/:token?msg=xxx
+GET https://push.bot.qw360.cn/room/:token?msg=xxx
 
 ```
 
