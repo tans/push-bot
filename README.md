@@ -4,14 +4,14 @@
 
 关注机器人即可获得推送 API 地址
 
-# 特点
+## 特点
 - 支持推送到个人微信和企微群
 - 代码少，百余行代码实现
 - 基于 Wechaty ，fastify
 - 请求限制， 防止机器人账号被封，也避免消息骚扰
 - 自动通过好友，自动生成接口地址
 
-# 安装运行
+## 安装运行
 
 1. 安装依赖 `npm install`
 
@@ -19,9 +19,9 @@
 
 3. 运行 `node bot.js`
 
-# 发送到个人接口
+## 发送到个人接口
 
-## 地址 https://push.bot.qw360.cn/send/:token
+### 地址 https://push.bot.qw360.cn/send/:token
 
 该接口通过关注机器人获得
 
@@ -47,7 +47,7 @@ POST https://push.bot.qw360.cn/send/:token
 
 图片 url 仅支持 https
 
-# 发送到群接口
+## 发送到群接口
 
 邀请机器人入群即可获得推送接口地址
 
@@ -63,12 +63,17 @@ GET https://push.bot.qw360.cn/room/:token?msg=xxx
 
 ```
 
-# 马上试用
+## 马上试用
 
-![image](https://user-images.githubusercontent.com/543287/126447077-48823663-cf5d-433b-b51d-8096f634477d.png)
+<img src="https://user-images.githubusercontent.com/543287/126447077-48823663-cf5d-433b-b51d-8096f634477d.png" style="width: 240px;" />
 
 
-# 定制专属机器人，请加微信
+## 其他项目
 
-WechatIMG1.jpeg![WechatIMG1](https://user-images.githubusercontent.com/543287/128118656-b35e7f0e-6b49-4eb2-b579-8dd3ead085ac.jpeg)
+### 每日推送 ToDoList
+查看项目 [PushBot](https://github.com/tans/push-todo)
+
+### 定制专属机器人，请加微信
+<img src="https://user-images.githubusercontent.com/543287/128118656-b35e7f0e-6b49-4eb2-b579-8dd3ead085ac.jpeg" style="width: 80px;" />
+
 
