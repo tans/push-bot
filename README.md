@@ -65,15 +65,19 @@ GET https://push.bot.qw360.cn/room/:token?msg=xxx
 
 ## 马上试用
 
-<img src="https://user-images.githubusercontent.com/543287/126447077-48823663-cf5d-433b-b51d-8096f634477d.png" style="width: 240px;" />
+<img src="https://user-images.githubusercontent.com/543287/126447077-48823663-cf5d-433b-b51d-8096f634477d.png" width="180px"/>
 
 
 ## 其他项目
 
 ### 每日推送 ToDoList
-查看项目 [PushBot](https://github.com/tans/push-todo)
+查看项目 [PushTodo](https://github.com/tans/push-todo)
 
-### 定制专属机器人，请加微信
-<img src="https://user-images.githubusercontent.com/543287/128118656-b35e7f0e-6b49-4eb2-b579-8dd3ead085ac.jpeg" style="width: 80px;" />
+### 字节猎人 微信群文字游戏
+查看项目 [ByteHunter](https://github.com/tans/byte-hunter)
+
+### 其他机器人项目
+
+[更多机器人](http://bh.bot.qw360.cn/about)
 
 
