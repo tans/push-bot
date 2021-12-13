@@ -1,6 +1,6 @@
 # push-bot
 
-基于 wechaty 的微信推送机器人
+推送精灵 - 基于 wechaty 的微信推送机器人
 
 关注机器人即可获得推送 API 地址
 
