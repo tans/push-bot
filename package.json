@@ -1,28 +1,25 @@
 {
-  "name": "push-bot",
-  "version": "1.0.0",
-  "description": "微信消息推送机器人",
-  "main": "bot.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "tans",
-  "license": "ISC",
-  "dependencies": {
-    "dotenv": "^10.0.0",
-    "fastify": "^3.19.1",
-    "fastify-rate-limit": "^5.5.0",
-    "file-box": "^0.16.8",
-    "lodash": "^4.17.21",
-    "nedb-promises": "^5.0.0",
-    "uuid": "^8.3.2",
-    "wechaty": "^0.62.3",
-    "wechaty-plugin-contrib": "^0.14.23"
-  },
-  "devDependencies": {
-    "coffeescript": "^2.5.1",
-    "prettier": "github:helixbass/prettier#prettier-v2.1.0-dev.100-gitpkg",
-    "prettier-plugin-coffeescript": "^0.1.5",
-    "wechaty-puppet-mock": "^0.28.3"
-  }
+    "name": "push-bot",
+    "version": "1.0.0",
+    "description": "微信消息推送机器人",
+    "main": "bot.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "tans",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^10.0.0",
+        "fastify": "^3.19.1",
+        "fastify-rate-limit": "^5.5.0",
+        "file-box": "^0.16.8",
+        "hot-import": "^0.2.14",
+        "lodash": "^4.17.21",
+        "nedb-promises": "^5.0.0",
+        "qrcode-terminal": "^0.12.0",
+        "uuid": "^8.3.2",
+        "wechaty": "^1.20.2",
+        "wechaty-puppet": "^1.10.2",
+        "wechaty-puppet-wechat4u": "^1.10.2"
+    }
 }

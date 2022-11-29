@@ -1,4 +1,7 @@
 package-lock.json
+pnpm-lock.yaml
 node_modules
 .env
-user.db
+users.db
+rooms.db
+bot.memory-card.json
