@@ -54,6 +54,10 @@ GET /room/:token?msg=xxx
 ```
 
 
+## demo
+
+<img src="demo/demo.png"  style="width:400px;"/>
+
 ### 更多
 
 开发者微信 tianshe00
