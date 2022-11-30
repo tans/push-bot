@@ -111,6 +111,7 @@ let sendRoomWebHook = async function (contact, room) {
     };
     r = await RoomDB.findOne({
         contactid: contact.id,
+        roomid: room.id
     });
     if (r) {
         return await _send(r.token);
