@@ -10,8 +10,8 @@
     "license": "ISC",
     "dependencies": {
         "dotenv": "^10.0.0",
-        "fastify": "^3.19.1",
-        "fastify-rate-limit": "^5.5.0",
+        "fastify": "^4.7.0",
+        "@fastify/rate-limit": "^7.6.0",
         "file-box": "^0.16.8",
         "hot-import": "^0.2.14",
         "lodash": "^4.17.21",
