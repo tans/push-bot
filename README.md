@@ -4,7 +4,7 @@
 
 关注机器人即可获得推送 API 地址
 
-## 重要更新：切换至wechat4u，免token可运行
+## 重要更新：切换至wechat4u，免token可运行 [有bug](https://github.com/tans/push-bot/issues/10)
 
 ## 特点
 - 支持推送到个人微信和群
