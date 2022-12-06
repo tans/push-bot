@@ -125,7 +125,7 @@ let sendRoomWebHook = async function (contact, room) {
     return await _send(token);
 };
 
-fastify.register(require("fastify-rate-limit"), {
+fastify.register(require("@fastify/rate-limit"), {
     max: 100,
     global: false,
 });
@@ -244,7 +244,7 @@ fastify.post(
 
 let start = async function () {
     await bot.start();
-    await fastify.listen(process.env.PORT || 3000);
+    await fastify.listen({port : process.env.PORT || 3000});
     return console.log("listen " + process.env.PORT || 3000);
 };
 
